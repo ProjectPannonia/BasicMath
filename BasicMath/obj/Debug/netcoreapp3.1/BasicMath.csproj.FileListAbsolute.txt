@@ -1,0 +1,11 @@
+D:\Repo\Visual Studio\BasicMath\BasicMath\bin\Debug\netcoreapp3.1\BasicMath.exe
+D:\Repo\Visual Studio\BasicMath\BasicMath\bin\Debug\netcoreapp3.1\BasicMath.deps.json
+D:\Repo\Visual Studio\BasicMath\BasicMath\bin\Debug\netcoreapp3.1\BasicMath.runtimeconfig.json
+D:\Repo\Visual Studio\BasicMath\BasicMath\bin\Debug\netcoreapp3.1\BasicMath.runtimeconfig.dev.json
+D:\Repo\Visual Studio\BasicMath\BasicMath\bin\Debug\netcoreapp3.1\BasicMath.dll
+D:\Repo\Visual Studio\BasicMath\BasicMath\bin\Debug\netcoreapp3.1\BasicMath.pdb
+D:\Repo\Visual Studio\BasicMath\BasicMath\obj\Debug\netcoreapp3.1\BasicMath.csprojAssemblyReference.cache
+D:\Repo\Visual Studio\BasicMath\BasicMath\obj\Debug\netcoreapp3.1\BasicMath.AssemblyInfoInputs.cache
+D:\Repo\Visual Studio\BasicMath\BasicMath\obj\Debug\netcoreapp3.1\BasicMath.AssemblyInfo.cs
+D:\Repo\Visual Studio\BasicMath\BasicMath\obj\Debug\netcoreapp3.1\BasicMath.dll
+D:\Repo\Visual Studio\BasicMath\BasicMath\obj\Debug\netcoreapp3.1\BasicMath.pdb
