@@ -2,6 +2,21 @@
 
 namespace BasicMath
 {
+    class Factorial
+    {
+        public String getFactorial(int number)
+        {
+            String result;
+            int factorial = 1;
+            for(int i = 1; i <= number; i++)
+            {
+                factorial *= i;
+            }
+            result = "A Megadott szám faktoriális értéke: " + factorial + ".";
+
+            return result;
+        }
+    }
     class MyMath{
             public String biggestDivisor(int a, int b)
         {
@@ -31,6 +46,7 @@ namespace BasicMath
     {
         static void Main(string[] args)
         {
+            /*
             MyMath math = new MyMath();
             Console.Write("Kérlek add meg az első számot: ");
             int a = int.Parse(Console.ReadLine());
@@ -38,6 +54,13 @@ namespace BasicMath
             int b = int.Parse(Console.ReadLine());
             Console.WriteLine(math.biggestDivisor(a, b));
             //math.biggestDivisor(a, b);
+            */
+
+            Factorial factorial = new Factorial();
+            Console.Write("Kérlek add meg a keresett számot: ");
+            int num = int.Parse(Console.ReadLine());
+            Console.WriteLine(factorial.getFactorial(num));
+
         }
     }
 }
