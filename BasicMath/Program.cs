@@ -2,64 +2,6 @@
 
 namespace BasicMath
 {
-    class Lotto
-    {
-        public int[] getLottoNumbers()
-        {
-            int[] res = new int[5];
-            
-            Random random = new Random();
-            
-            for(int i = 0; i < res.Length; i++)
-            {
-                int actual = random.Next(1, 91);
-                if (containsActualNumber(res, actual))
-                {
-                    --i;
-                    continue;
-                }
-                else
-                {
-                    res[i] = actual;
-                }
-            }
-            return res;
-        }
-        //Return true, if array contain zero
-        private bool containsZero(int[] arr)
-        {
-            for(int i = 0; i < arr.Length; i++)
-            {
-                if (arr[i] == 0) return true;
-            }
-            return false;
-        }
-        // Return true, if actual number already in array
-        private bool containsActualNumber(int[] arr, int num)
-        {
-            bool flag = false;
-            for(int i = 0; i < arr.Length; i++)
-            {
-                if (arr[i] == num) flag = true;
-            }
-            return flag;
-        }
-    }
-    class Factorial
-    {
-        public String getFactorial(int number)
-        {
-            String result;
-            int factorial = 1;
-            for(int i = 1; i <= number; i++)
-            {
-                factorial *= i;
-            }
-            result = "A Megadott szám faktoriális értéke: " + factorial + ".";
-
-            return result;
-        }
-    }
     class MyMath{
             public String biggestDivisor(int a, int b)
         {
@@ -108,6 +50,7 @@ namespace BasicMath
             Console.WriteLine("PostFix: " + a++);
             Console.WriteLine("PreFix: " + ++a);
             */
+            /*
             Lotto lotto = new Lotto();
             bool flag = false;
             do
@@ -122,6 +65,37 @@ namespace BasicMath
                 if (answer.Equals("y")) flag = true;
                 if (answer.Equals("n")) break;
             } while (flag);
+            */
+            /*Console.Write("Kérlek add meg a születési dátumodat a következő formátumban, DD MM YEAR: ");
+            string dateOfBirth = Console.ReadLine();
+            string[] birthDayArr = dateOfBirth.Split(" ");
+
+            int birthMonth = int.Parse(birthDayArr[0]);
+            int birthDay = int.Parse(birthDayArr[1]);
+            int birthYear = int.Parse(birthDayArr[2]);
+
+            int actualMonth = DateTime.Now.Month;
+            int actualDay = DateTime.Now.Day;
+            int actualYear = DateTime.Now.Year;
+
+            bool y = (actualYear - birthYear) >= 18;
+            bool d = (birthDay <= actualDay);
+            bool m = birthMonth <= actualMonth;
+
+            if((actualYear - birthYear) == 18 && m && d)
+            {
+                Console.Write("Nagykorú vagy!");
+            }
+            if((actualYear - birthYear > 18))
+            {
+                Console.Write("Nagykorú vagy!");
+            }
+            else
+            {
+                Console.Write("Túl fiatal vagy!");
+            }*/
+            AgeCheck age = new AgeCheck();
+            age.writeYourBirthDay();
         }
     }
 }
